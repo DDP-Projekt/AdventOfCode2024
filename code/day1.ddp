@@ -1,0 +1,42 @@
+Binde "Duden/Ausgabe" ein.
+Binde "Duden/Dateisystem" ein.
+Binde "Duden/Texte" ein.
+Binde "Duden/Zahlen" ein.
+Binde "Duden/Listen" ein.
+Binde "Duden/Fehlerbehandlung" ein.
+Binde "Duden/Statistik" ein.
+
+Schreibe ab jetzt alle Fehler.
+
+Die Funktion Part1 gibt einen Text zurück, macht:
+	Die Datei datei ist noch nicht offen.
+	Öffne datei mit dem Pfad "data/day1.txt" zum Lesen.
+
+	Die Zahlen Liste liste_1 ist eine leere Zahlen Liste.
+	Die Zahlen Liste liste_2 ist eine leere Zahlen Liste.
+
+	Solange datei nicht zuende ist, mache:
+		Füge (die nächste Zahl aus datei) an liste_1 an.
+		Füge (die nächste Zahl aus datei) an liste_2 an.
+
+	Die Zahl summe ist 0.
+	Wiederhole:
+		Die Zahl min_1 ist (der kleinste Wert aus liste_1).
+		Die Zahl min_2 ist (der kleinste Wert aus liste_2).
+		Die Zahl distanz ist der Betrag von (min_1 minus min_2).
+		Erhöhe summe um distanz.
+		Lösche das Element an der Stelle (der Index von min_1 in liste_1) aus liste_1.
+		Lösche das Element an der Stelle (der Index von min_2 in liste_2) aus liste_2.
+	Die Länge von liste_1 Mal.
+
+	Schreibe summe auf eine Zeile.
+
+	Schließe datei.
+	Gib summe als Text zurück.
+Und kann so benutzt werden:
+	"das Ergebnis von Part1"
+
+Die Funktion Part2 gibt einen Text zurück, macht:
+	...
+Und kann so benutzt werden:
+	"das Ergebnis von Part2"
