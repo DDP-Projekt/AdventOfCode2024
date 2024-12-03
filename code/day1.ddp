@@ -8,16 +8,29 @@ Binde "Duden/Statistik" ein.
 
 Schreibe ab jetzt alle Fehler.
 
-Die Funktion Part1 gibt einen Text zurück, macht:
+Die Funktion Lies_Eingabe mit den Parametern liste_1 und liste_2 vom Typ Zahlen Listen Referenz und Zahlen Listen Referenz, gibt nichts zurück, macht:
 	Die Datei datei ist noch nicht offen.
 	Öffne datei mit dem Pfad "data/day1.txt" zum Lesen.
-
-	Die Zahlen Liste liste_1 ist eine leere Zahlen Liste.
-	Die Zahlen Liste liste_2 ist eine leere Zahlen Liste.
 
 	Solange datei nicht zuende ist, mache:
 		Füge (die nächste Zahl aus datei) an liste_1 an.
 		Füge (die nächste Zahl aus datei) an liste_2 an.
+	Schließe datei.
+Und kann so benutzt werden:
+	"Lies die Eingabe in <liste_1> und <liste_2>"
+
+Die öffentliche Funktion Absolute_Häufigkeit_Zahl mit den Parametern liste und x vom Typ Zahlen Liste und Zahl, gibt eine Zahl zurück, macht:
+	Die Zahl anzahl ist 0.
+	Für jede Zahl z in liste, wenn z gleich x ist, erhöhe anzahl um 1.
+	Gib anzahl zurück.
+Und kann so benutzt werden:
+	"die absolute Häufigkeit von <x> in <liste>"
+
+Die Funktion Part1 gibt eine Zahl zurück, macht:
+	Die Zahlen Liste liste_1 ist eine leere Zahlen Liste.
+	Die Zahlen Liste liste_2 ist eine leere Zahlen Liste.
+
+	Lies die Eingabe in liste_1 und liste_2.
 
 	Die Zahl summe ist 0.
 	Wiederhole:
@@ -29,14 +42,25 @@ Die Funktion Part1 gibt einen Text zurück, macht:
 		Lösche das Element an der Stelle (der Index von min_2 in liste_2) aus liste_2.
 	Die Länge von liste_1 Mal.
 
-	Schreibe summe auf eine Zeile.
-
-	Schließe datei.
-	Gib summe als Text zurück.
+	Gib summe zurück.
 Und kann so benutzt werden:
 	"das Ergebnis von Part1"
 
-Die Funktion Part2 gibt einen Text zurück, macht:
-	...
+Schreibe (das Ergebnis von Part1) auf eine Zeile.
+
+Die Funktion Part2 gibt eine Zahl zurück, macht:
+	Die Zahlen Liste liste_1 ist eine leere Zahlen Liste.
+	Die Zahlen Liste liste_2 ist eine leere Zahlen Liste.
+
+	Lies die Eingabe in liste_1 und liste_2.
+
+	Die Zahl ähnlichkeit ist 0.
+	Für jede Zahl z in liste_1, mache:
+		Die Zahl n ist die absolute Häufigkeit von z in liste_2.
+		Erhoehe ähnlichkeit um z mal n.
+
+	Gib ähnlichkeit zurück.
 Und kann so benutzt werden:
 	"das Ergebnis von Part2"
+
+Schreibe (das Ergebnis von Part2) auf eine Zeile.
