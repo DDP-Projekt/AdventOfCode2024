@@ -1,0 +1,64 @@
+Binde "Duden/Ausgabe" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Dateisystem" ein.
+Binde "Duden/Fehlerbehandlung" ein.
+Binde "Duden/Texte" ein.
+Binde "Duden/Listen" ein.
+
+Schreibe ab jetzt alle Fehler.
+
+Die Datei datei ist noch nicht offen.
+Öffne datei mit dem Pfad "data/day2.txt" zum Lesen.
+
+Die Text Liste reports ist die Zeilen aus datei.
+
+Die Funktion AllInc mit dem Parameter zahlen vom Typ Text Liste, gibt einen Wahrheitswert zurück, macht:
+	Für jede Zahl i von 2 bis die Länge von zahlen, mache:
+		Die Zahl zahl ist (zahlen an der Stelle i) als Zahl.
+		Die Zahl letzte_zahl ist (zahlen an der Stelle (i minus 1)) als Zahl.
+		Wenn letzte_zahl größer als, oder zahl ist, gib falsch zurück.
+	Gib wahr zurück.
+Und kann so benutzt werden:
+	"alle Werte im <zahlen> sich erhöhen"
+
+Die Funktion AllDec mit dem Parameter zahlen vom Typ Text Liste, gibt einen Wahrheitswert zurück, macht:
+	Für jede Zahl i von 2 bis die Länge von zahlen, mache:
+		Die Zahl zahl ist (zahlen an der Stelle i) als Zahl.
+		Die Zahl letzte_zahl ist (zahlen an der Stelle (i minus 1)) als Zahl.
+		Wenn letzte_zahl kleiner als, oder zahl ist, gib falsch zurück.
+	Gib wahr zurück.
+Und kann so benutzt werden:
+	"alle Werte im <zahlen> sich verringern"
+
+Die Funktion DiffNotLarge mit dem Parameter zahlen vom Typ Text Liste, gibt einen Wahrheitswert zurück, macht:
+	Für jede Zahl i von 2 bis die Länge von zahlen, mache:
+		Die Zahl zahl ist (zahlen an der Stelle i) als Zahl.
+		Die Zahl letzte_zahl ist (zahlen an der Stelle (i minus 1)) als Zahl.
+		Wenn nicht (der Betrag von (letzte_zahl minus zahl) zwischen 0 und 4 ist), gib falsch zurück.
+	Gib wahr zurück.
+Und kann so benutzt werden:
+	"die Zahlen in <zahlen> sich um 1, 2 oder 3 verändern"
+
+Die Zahl z ist 0.
+Für jeden Text report in reports, mache:
+	Die Text Liste zahlen ist die Worte in report.
+	Wenn die Zahlen in zahlen sich um 1, 2 oder 3 verändern 
+		und (alle Werte im zahlen sich erhöhen oder alle Werte im zahlen sich verringern), erhöhe z um 1.
+
+Schreibe "Part 1: ".
+Schreibe z auf eine Zeile.
+
+Die Zahl z2 ist 0.
+Für jeden Text report in reports, mache:
+	Die Text Liste zahlen ist die Worte in report.
+	Wenn die Zahlen in zahlen sich um 1, 2 oder 3 verändern und (alle Werte im zahlen sich erhöhen oder alle Werte im zahlen sich verringern), erhöhe z2 um 1.
+	Sonst:
+		Für jede Zahl a von 1 bis die Länge von zahlen, mache:
+			Die Text Liste zahlen_mod ist zahlen.
+			Lösche das Element an der Stelle a aus zahlen_mod.
+			Wenn die Zahlen in zahlen_mod sich um 1, 2 oder 3 verändern und (alle Werte im zahlen_mod sich erhöhen oder alle Werte im zahlen_mod sich verringern), dann:
+				Erhöhe z2 um 1.
+				Verlasse die Schleife.
+
+Schreibe "Part 2: ".
+Schreibe z2 auf eine Zeile.
