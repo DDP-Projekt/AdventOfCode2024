@@ -1,0 +1,65 @@
+Binde "Duden/Ausgabe" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Dateisystem" ein.
+Binde "Duden/Fehlerbehandlung" ein.
+Binde "Duden/Texte" ein.
+Binde "Duden/Zeichen" ein.
+
+Schreibe ab jetzt alle Fehler.
+
+Der Text text ist "".
+Lies den Text in "data/day3.txt" und speichere ihn in text.
+
+Die Zahl i ist 0.
+
+Die Funktion Aktuelles_Zeichen gibt einen Buchstaben zurück, macht:
+	Gib text an der Stelle i zurück.
+Und kann so benutzt werden:
+	"das aktuelle Zeichen"
+
+Die Funktion Nächstes_Text mit dem Parameter x vom Typ Text, gibt einen Wahrheitswert zurück, macht:
+	Die Zahl n ist die Länge von x minus 1.
+	Gib wahr, wenn i plus n kleiner als die Länge von text ist und (text im Bereich von i bis (i plus n)) gleich x ist, zurück.
+Und kann so benutzt werden:
+	"der nächste Text <x> ist"
+
+Die Funktion Teil_N mit dem Parameter n vom Typ Zahl, gibt eine Zahl zurück, macht:
+	i ist 0.
+	Die Zahl summe ist 0.
+	Der Wahrheitswert enabled ist wahr.
+
+	Solange i kleiner als die Länge von text ist, mache:
+		Erhöhe i um 1.
+
+		Wenn nicht enabled, dann:
+			Wenn n gleich 2 ist und der nächste Text "do()" ist, speichere wahr in enabled.
+		Sonst:
+			Wenn n gleich 2 ist und der nächste Text "don't()" ist, speichere falsch in enabled.
+			
+			Wenn der nächste Text "mul(" ist, dann:
+				Erhöhe i um 4.
+
+				Die Zahl z1s ist i.
+				Solange (das aktuelle Zeichen) eine Ziffer ist, erhöhe i um 1.
+				Die Zahl z1 ist (text im Bereich von z1s bis i) als Zahl.
+
+				Wenn das aktuelle Zeichen ungleich ',' ist, fahre mit der Schleife fort.
+				Erhöhe i um 1.
+
+				Die Zahl z2s ist i.
+				Solange (das aktuelle Zeichen) eine Ziffer ist, erhöhe i um 1.
+				Die Zahl z2 ist (text im Bereich von z2s bis i) als Zahl.
+
+				Wenn (das aktuelle Zeichen) ungleich ')' ist, fahre mit der Schleife fort.
+
+				Erhöhe summe um z1 mal z2.
+
+	Gib summe zurück.
+Und kann so benutzt werden:
+	"die Lösung von Teil <n>"
+
+Schreibe "Teil 1: ".
+Schreibe (die Lösung von Teil 1) auf eine Zeile.
+
+Schreibe "Teil 2: ".
+Schreibe (die Lösung von Teil 2) auf eine Zeile.
