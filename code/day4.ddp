@@ -1,0 +1,105 @@
+Binde "Duden/Ausgabe" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Dateisystem" ein.
+Binde "Duden/Fehlerbehandlung" ein.
+Binde "Duden/Texte" ein.
+Binde "Duden/Zeichen" ein.
+
+Schreibe ab jetzt alle Fehler.
+
+Der Text text ist "".
+Lies den Text in "data/day4.txt" und speichere ihn in text.
+
+Schreibe text auf eine Zeile.
+
+Die Zahl breite ist der Index von '\n' in text.
+Die Zahl höhe ist die Anzahl der '\n' Buchstaben in text.
+
+Schreibe (breite minus 1). Schreibe " x ". Schreibe (höhe plus 1) auf eine Zeile.
+
+Die Funktion Horizontal gibt eine Zahl zurück, macht:
+	Gib die Anzahl der Subtexte "XMAS" in text plus die Anzahl der Subtexte "SAMX" in text zurück.
+Und kann so benutzt werden:
+	"Horizontal"
+
+Die Funktion Vertikal gibt eine Zahl zurück, macht:
+	Die Zahl i ist 1.
+	Die Zahl anz ist 0.
+
+	Solange (i plus 3 mal breite) kleiner als, oder die Länge von text ist, mache:
+		Der Buchstabe b1 ist (text an der Stelle i).
+		Der Buchstabe b2 ist (text an der Stelle (i plus breite)).
+		Der Buchstabe b3 ist (text an der Stelle (i plus 2 mal breite)).
+		Der Buchstabe b4 ist (text an der Stelle (i plus 3 mal breite)).
+		
+		Wenn b1 gleich 'X' ist und b2 gleich 'M' ist und b3 gleich 'A' ist und b4 gleich 'S' ist, erhöhe anz um 1.
+		Wenn b1 gleich 'S' ist und b2 gleich 'A' ist und b3 gleich 'M' ist und b4 gleich 'X' ist, erhöhe anz um 1.
+
+		Erhöhe i um 1.
+	Gib anz zurück.
+Und kann so benutzt werden:
+	"Vertikal"
+
+Die Funktion Diagonal gibt eine Zahl zurück, macht:
+	Die Zahl i ist 1.
+	Die Zahl anz ist 0.
+
+	Solange (i plus 3 mal breite plus 3) kleiner als, oder die Länge von text ist, mache:
+		Der Buchstabe b1 ist (text an der Stelle i).
+		Der Buchstabe b2 ist (text an der Stelle (i plus breite plus 1)).
+		Der Buchstabe b3 ist (text an der Stelle (i plus 2 mal breite plus 2)).
+		Der Buchstabe b4 ist (text an der Stelle (i plus 3 mal breite plus 3)).
+		Der Buchstabe b21 ist (text an der Stelle (i plus 3)).
+		Der Buchstabe b22 ist (text an der Stelle (i plus breite plus 2)).
+		Der Buchstabe b23 ist (text an der Stelle (i plus 2 mal breite plus 1)).
+		Der Buchstabe b24 ist (text an der Stelle (i plus 3 mal breite)).
+		
+		Wenn b1 gleich 'X' ist und b2 gleich 'M' ist und b3 gleich 'A' ist und b4 gleich 'S' ist, erhöhe anz um 1.
+		Wenn b1 gleich 'S' ist und b2 gleich 'A' ist und b3 gleich 'M' ist und b4 gleich 'X' ist, erhöhe anz um 1.
+
+		Wenn b21 gleich 'X' ist und b22 gleich 'M' ist und b23 gleich 'A' ist und b24 gleich 'S' ist, erhöhe anz um 1.
+		Wenn b21 gleich 'S' ist und b22 gleich 'A' ist und b23 gleich 'M' ist und b24 gleich 'X' ist, erhöhe anz um 1.
+
+
+		Erhöhe i um 1.
+	Gib anz zurück.
+Und kann so benutzt werden:
+	"Diagonal"
+
+[Schreibe (Horizontal plus Vertikal plus Diagonal) auf eine Zeile.
+]
+Die Funktion Teil2 gibt eine Zahl zurück, macht:
+	Die Zahl i ist 1.
+	Die Zahl anz ist 0.
+
+	Solange (i plus 2 mal breite plus 2) kleiner als, oder die Länge von text ist, mache:
+		Der Buchstabe b1 ist (text an der Stelle i).
+		Der Buchstabe b2 ist (text an der Stelle (i plus breite plus 1)).
+		Der Buchstabe b3 ist (text an der Stelle (i plus 2 mal breite plus 2)).
+		Der Buchstabe b21 ist (text an der Stelle (i plus 2)).
+		Der Buchstabe b22 ist (text an der Stelle (i plus breite plus 1)).
+		Der Buchstabe b23 ist (text an der Stelle (i plus 2 mal breite)).
+		
+		Wenn b1 gleich 'M' ist und b2 gleich 'A' ist und b3 gleich 'S' ist
+			 und b21 gleich 'S' ist und b22 gleich 'A' ist und b23 gleich 'M' ist, erhöhe anz um 1.
+		
+		Wenn b1 gleich 'S' ist und b2 gleich 'A' ist und b3 gleich 'M' ist
+			 und b21 gleich 'S' ist und b22 gleich 'A' ist und b23 gleich 'M' ist, erhöhe anz um 1.
+
+		Wenn b1 gleich 'M' ist und b2 gleich 'A' ist und b3 gleich 'S' ist
+			 und b21 gleich 'M' ist und b22 gleich 'A' ist und b23 gleich 'S' ist, erhöhe anz um 1.
+
+		Wenn b1 gleich 'S' ist und b2 gleich 'A' ist und b3 gleich 'M' ist
+			 und b21 gleich 'M' ist und b22 gleich 'A' ist und b23 gleich 'S' ist, erhöhe anz um 1.
+
+[		Schreibe "\n\n".
+		Schreibe b1. Schreibe ".". Schreibe b21 auf eine Zeile.
+		Schreibe ".". Schreibe b2. Schreibe "." auf eine Zeile.
+		Schreibe b23. Schreibe ".". Schreibe b3 auf eine Zeile.]
+		
+		Erhöhe i um 1.
+	Gib anz zurück.
+Und kann so benutzt werden:
+	"die Lösung von Teil 2"
+
+Schreibe (die Lösung von Teil 2) auf eine Zeile.
